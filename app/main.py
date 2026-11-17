@@ -36,5 +36,5 @@ async def get_expenses():
     return expenses
 
 @app.get("/expenses/statistics/max")
-async def get_max_expense(month: str):
+async def get_max_expense(month: str = None):
     return {"max_amount": 1000, "category": "Еда"}
